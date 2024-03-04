@@ -1,6 +1,7 @@
 'use client';
 
 import { Inter } from 'next/font/google';
+import Head from 'next/head';
 
 import { useContextTranslation } from '~/global-context/translation';
 import { useTheme } from '~/hooks/use-theme';
@@ -19,12 +20,12 @@ export function Body({
 
   return (
     <html lang={defaultLanguage} className={theme}>
-      <head>
+      <Head>
         <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,400,1,200&display=block"
         />
-      </head>
+      </Head>
       <body
         className={inter.className}
         style={{ overflow: backdropIsShow ? 'hidden' : 'auto' }}
