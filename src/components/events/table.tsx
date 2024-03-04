@@ -61,17 +61,6 @@ export function EventsTable({ events }: { events: EventEntity[] }) {
         onLineAction={({ original }) => {
           push(`./events/${original.id}`);
         }}
-        buttons={[
-          {
-            tooltip: String(translate('common.new')),
-            icon: 'add_circle',
-            enabledWhen: 'always',
-            shouldUnselect: true,
-            onClick: () => {
-              push('./events/new');
-            },
-          },
-        ]}
       />
       {isSaving && <div>saving...</div>}
     </>
