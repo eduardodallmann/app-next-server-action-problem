@@ -20,16 +20,14 @@ export function Body({
 
   return (
     <html lang={defaultLanguage} className={theme}>
-      <Head>
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,400,1,200&display=block"
-        />
-      </Head>
       <body
         className={inter.className}
         style={{ overflow: backdropIsShow ? 'hidden' : 'auto' }}
       >
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,400,1,200&display=block"
+        />
         <Backdrop />
         {children}
         {/* <Toast /> */}
